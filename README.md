@@ -21,7 +21,7 @@ Create web server by python to test
 # Follow to this link
 - `https://flutter.dev/docs/get-started/web`<br>
 The api from flutter about flutter on web
-- `https://flutter.dev/docs/get-started/web`<br>
+- `https://github.com/themaaz32/Flultter-Reponsive-UI`<br>
 The original github to learn.
 
 <img src="https://raw.githubusercontent.com/atthana/test_flutter-responsive-web-mobile/master/photo_readme/login.jpg">
