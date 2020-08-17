@@ -51,18 +51,52 @@ class _HomeScreenState extends State<HomeScreen> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: new Text('END !!!'),
-          content: Text(
-              'Thank you everyone for this session.\n\nDo you have any questions?'),
+          title: new Text(
+            'END !!!',
+            style: TextStyle(
+              fontSize: 40,
+            ),
+          ),
+          content: Container(
+            height: 500,
+            width: 600,
+            child: Column(
+              children: [
+                Text(
+                  'Thank you everyone for this session.\n\nDo you have any questions?\n\n',
+                  style: TextStyle(
+                    fontSize: 25,
+                  ),
+                ),
+                Container(
+                  height: 250,
+                  child: Image.asset(
+                    "assets/norak.jpg",
+                    fit: BoxFit.contain,
+                  ),
+                ),
+              ],
+            ),
+          ),
           actions: <Widget>[
             FlatButton(
-              child: new Text("NO"),
+              child: new Text(
+                "No, I don't have.",
+                style: TextStyle(
+                  fontSize: 25,
+                ),
+              ),
               onPressed: () {
                 Navigator.of(context).pop();
               },
             ),
             FlatButton(
-              child: new Text("YES"),
+              child: new Text(
+                "I don't either.",
+                style: TextStyle(
+                  fontSize: 25,
+                ),
+              ),
               onPressed: () {
                 Navigator.of(context).pop();
               },
